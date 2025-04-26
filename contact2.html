@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.o">
+        <title>Kontak Kami</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0 ;
+                padding: 0;
+                background-color: #ffffff;
+            }
+            header {
+                background-color: #806158;
+                color: #ffffff;
+                padding: 10px 0;
+                text-align: center;
+            }
+            nav {
+                margin: 20px;
+                text-align: center;
+            }
+            nav a {
+                color: #806158;
+                text-decoration: none;
+                margin: 0 15px;
+                font-size: 18px;
+            }
+            nav a:hover {
+                text-decoration: underline;
+            }
+            .container {
+                width: 80%;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #ecd8c1;
+                border-radius: 8px ;
+                box-shadow: 0 0 10px rgba(0,0,0,0,1);
+                margin-top: 20px;
+            }
+            h2 {
+                color: #333;
+            }
+            .contact-info {
+                margin-top: 0;
+            }
+            .contact-info h3 {
+                margin-top: 0;
+            }
+            .contact-info p {
+                margin: 5px 0;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+            form label{
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            form input, form textarea{
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #c4a198;
+                border-radius: 4px;
+            }
+            form button {
+                padding: 10px;
+                background-color: #806158 ;
+                border: none;
+                border-radius: 4px;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            form button:hover {
+                background-color: #c4a198;
+            }
+            footer{
+                background-color: #333;
+                color: #ffffff;
+                text-align:  center;
+                padding: 10px 0;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+        <h1>Kontak Kami</h1>
+        </header>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about2.html">About</a>
+            <a href="service2.html">Menu</a>
+            <a href="contact2.html">Contact</a>
+        </nav>
+        
+        <div class="container">
+            <h2>
+                Pesan Sekarang! 🎉🍰
+            </h2>
+            <div class="contact-info">
+                <P>
+                    Selamat datang di halaman pemesanan SweetyFood! 🍩💖 Proses pemesanan sangat mudah! Isi formulir di bawah ini dengan detail pesanan Anda, dan tim kami akan segera mengonfirmasi pesanan Anda. 📦✨
+                </P>
+                <P>
+                    Jika Anda memiliki pertanyaan atau permintaan khusus, jangan ragu untuk menghubungi kami melalui nomor telepon atau email yang tertera. Mari nikmati kelezatan dari SweetyFood dan buat hari Anda lebih manis! 🍭🌈
+                </P>
+            </div>
+            <div>
+                <p><strong>Alamat:</strong> Jl. Nanjung, Kp.Jati, Margaasih</p>
+                <p><strong>Telepon:</strong> 08993949856 </p>
+                <p><strong>Email:</strong> sweetyfood2513@gmail.com</p>
+            </div>
+            
+            <h2></h2>
+            <form action="submit_contact_form.php" method="post">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="nomor">Nomor Telepon:</label>
+                <input type="text" id="nomor" name="nomor" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Alamat Pengiriman:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="message">Catatan:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </body>
+</html>

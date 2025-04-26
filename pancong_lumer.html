@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>layanan kami</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #fff;
+            }
+            header {
+                background-color: pink;
+                color: #fff;
+                padding: 10px 0;
+                text-align: center;
+            }
+            header h1 {
+                font-family: 'Caveat', cursive;
+            }
+            nav {
+                margin: 20px;
+                text-align: center;
+            }
+            nav a {
+                color: pink;
+                text-decoration: none;
+                margin: 0 15px;
+                font-size: 18px;
+            }
+            nav a:hover {
+                text-decoration: underline;
+            }
+            .container {
+                width: 80%;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: antiquewhite;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                margin-top: 20px;
+                height: auto;
+	            margin-bottom:100px;
+                text-align: center;
+            }
+            .team-member {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .team-member img {
+                border-radius: 10%;
+                width: 70%;  
+                max-width: 400px;  /* Membatasi ukuran maksimum */
+                height: auto;
+                margin-bottom: 20px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            .menu-container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px; /*jatak anatar elemen grid*/
+                justify-items: center;
+                margin-top: 20px;
+            }
+            .menu-item {
+                background-color: pink;
+                padding: 10px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px gray;
+                width: 100%;
+                max-width: 180px;
+                text-align: center;
+            }
+            .menu-item h3 {
+                font-size: 18px;
+                margin: 10px 0;
+                color: black;
+            }
+            footer {
+                background-color: rgb(63, 61, 61);
+                color: #fff;
+                text-align: center;
+                padding: 10px 0;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+            }
+            footer p {
+                margin: 0;
+            }
+            .back-button {
+            background-color: pink; 
+            color: black; 
+            padding: 10px 20px; /* Padding tombol */
+            font-size: 18px; 
+            border: none; 
+            border-radius: 5px; /* Membuat sudut tombol melengkung */
+            cursor: pointer; /* Mengubah kursor ketika hover */
+            margin-top: 20px; 
+            text-decoration: none; /* Menghapus garis bawah pada teks */
+            }
+            .back-button:hover {
+            background-color: gray; /* Mengubah warna saat tombol dihover */
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>🎀 Varian Rasa Pancong Lumer 🎀</h1>
+        </header>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about2.html">About</a>
+            <a href="service2.html">Menu</a>
+            <a href="contact2.html">Contact</a>
+        </nav>
+
+        <div class="container">
+            <div class="team-member">
+                <img src="pancong2.webp" alt="Varian Rasa Pancong Lumer">
+                <div class="isi">
+                    <h2>Varian Rasa</h2>
+                    <div class="menu-container">
+                        <div class="menu-item">
+                            <h3>Original</h3>
+                        </div>
+                        <div class="menu-item">
+                            <h3>Coklat</h3>
+                        </div>
+                        <div class="menu-item">
+                            <h3>Greentea</h3>
+                        </div>
+                        <div class="menu-item">
+                            <h3>Milo</h3>
+                        </div>
+                        <div class="menu-item">
+                            <h3>Tiramisu</h3>
+                        </div>
+                        <div class="menu-item">
+                            <h3>Oreo</h3>
+                        </div>
+                        <div class="menu-item">
+                            <h3>Strawberry</h3>
+                        </div>
+                        <div class="menu-item">
+                            <h3>Keju</h3>
+                        </div>
+                    </div>
+                    <h3>Anda dapat memilih beberapa rasa untuk setiap menu. Silakan tuliskan pilihan rasa di catatan pemesanan</h3>
+                    <h3>dalam format berikut: Nama Makanan - Rasa (contoh: pancong lumer - Coklat, Keju).</h3>
+                    <a href="service2.html">
+                        <button class="back-button">Kembali ke Menu</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            🍪 &copy;2024 SweetyFood. Semua hak dilindungi 🍩
+        </footer>
+    </body>
+</html>
